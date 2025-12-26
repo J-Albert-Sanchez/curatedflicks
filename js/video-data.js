@@ -55,17 +55,17 @@ const videoDatabase = {
             featured: true
         },
 
-        {
-        id: "h002",
-        title: "Carnival of Souls",
-        youtubeId: "vNYg4YWkp0k", // Search: "Carnival of Souls 1962 full movie" (Runtime: 78 min)
-        year: 1962,
-        category: "horror",
-        subcategory: "psychological",
-        description: "After a traumatic accident, a young woman moves to Utah and takes a job as a church organist, but she's haunted by a ghoulish figure and drawn to an abandoned lakeside pavilion. Herk Harvey's atmospheric indie horror masterpiece influenced filmmakers like George Romero and David Lynch.",
-        thumbnail: "https://img.youtube.com/vi/vNYg4YWkp0k/maxresdefault.jpg",
-        featured: true
-    },
+            {
+            id: "h002",
+            title: "Carnival of Souls",
+            youtubeId: "vNYg4YWkp0k", // Search: "Carnival of Souls 1962 full movie" (Runtime: 78 min)
+            year: 1962,
+            category: "horror",
+            subcategory: "psychological",
+            description: "After a traumatic accident, a young woman moves to Utah and takes a job as a church organist, but she's haunted by a ghoulish figure and drawn to an abandoned lakeside pavilion. Herk Harvey's atmospheric indie horror masterpiece influenced filmmakers like George Romero and David Lynch.",
+            thumbnail: "https://img.youtube.com/vi/vNYg4YWkp0k/hqdefault.jpg",
+            featured: true
+        },
 
         // Add more horror films here
     ],
