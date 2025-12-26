@@ -30,7 +30,10 @@ function loadVideo() {
     videoWrapper.innerHTML = `
         <iframe 
             src="https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
     `;
