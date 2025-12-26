@@ -29,10 +29,10 @@ function loadVideo() {
     const videoWrapper = document.getElementById('videoWrapper');
     videoWrapper.innerHTML = `
         <iframe 
-            src="https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0" 
+            src="https://www.youtube.com/embed/${video.youtubeId}?rel=0" 
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
