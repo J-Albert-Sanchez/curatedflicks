@@ -7,12 +7,12 @@ const videoDatabase = {
         {
             id: "cf001",
             title: "Night of the Living Dead",
-            youtubeId: "H9H2X6MTG1I",
+            youtubeId: "J7Yvhe5fKmM",
             year: 1968,
             category: "classic-films",
             subcategory: "horror",
             description: "A group of people hide from bloodthirsty zombies in a farmhouse.",
-            thumbnail: "https://img.youtube.com/vi/H9H2X6MTG1I/maxresdefault.jpg",
+            thumbnail: "https://img.youtube.com/vi/J7Yvhe5fKmM/maxresdefault.jpg",
             featured: true
         },
         {
