@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuratedFlicks - Free Streaming, Handpicked</title>
+    <meta name="description" content="Discover handpicked free films, series, and retro content from YouTube. Your curated streaming experience.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CuratedFlicks</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Free Streaming,<br>Handpicked</h1>
+                <p class="hero-description">Discover curated films, series, and retro gems from across YouTube. No subscriptions, no nonsense.</p>
+                <div class="hero-buttons">
+                    <a href="browse.html" class="btn btn-primary">Start Watching</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured This Week</h2>
+            <div class="featured-grid" id="featuredGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Rows -->
+    <section class="category-rows">
+        <div class="container">
+            <!-- Classic Films -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Classic Films</h2>
+                    <a href="browse.html?category=classic-films" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="classicFilms">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Horror -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Horror</h2>
+                    <a href="browse.html?category=horror" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="horror">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Documentaries -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Documentaries</h2>
+                    <a href="browse.html?category=documentaries" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="documentaries">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Anime -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Anime</h2>
+                    <a href="browse.html?category=anime" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="anime">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Retro Programming -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Retro Programming</h2>
+                    <a href="browse.html?category=retro" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="retro">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Indie Films -->
+            <div class="category-row">
+                <div class="category-header">
+                    <h2 class="category-title">Indie Films</h2>
+                    <a href="browse.html?category=indie" class="see-all">See All →</a>
+                </div>
+                <div class="content-slider" id="indie">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense Placeholder -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                <!-- Replace with your AdSense code -->
+                <p>Advertisement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">CuratedFlicks</h3>
+                    <p class="footer-tagline">Free Streaming, Handpicked</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CuratedFlicks. All content sourced from YouTube under their embed terms of service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/video-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

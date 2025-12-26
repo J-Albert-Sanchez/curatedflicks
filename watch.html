@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - CuratedFlicks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video-player.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CuratedFlicks</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Player Section -->
+    <section class="player-section">
+        <div class="player-container">
+            <div class="video-wrapper" id="videoWrapper">
+                <!-- YouTube iframe will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Info Section -->
+    <section class="video-info-section">
+        <div class="container">
+            <div class="video-info">
+                <h1 class="video-title" id="videoTitle">Loading...</h1>
+                <div class="video-meta" id="videoMeta">
+                    <span class="video-year"></span>
+                    <span class="video-category"></span>
+                </div>
+                <p class="video-description" id="videoDescription"></p>
+                
+                <div class="video-actions">
+                    <a href="#" class="btn btn-secondary" id="watchOnYouTube" target="_blank">
+                        Watch on YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense Placeholder -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                <!-- Replace with your AdSense code -->
+                <p>Advertisement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Content -->
+    <section class="related-section">
+        <div class="container">
+            <h2 class="section-title">More Like This</h2>
+            <div class="content-slider" id="relatedContent">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">CuratedFlicks</h3>
+                    <p class="footer-tagline">Free Streaming, Handpicked</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CuratedFlicks. All content sourced from YouTube under their embed terms of service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/video-data.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CuratedFlicks</title>
+    <meta name="description" content="Learn about CuratedFlicks and our mission to curate the best free content from YouTube.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .about-header {
+            padding: 8rem 0 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a14 50%, #0a0a0a 100%);
+        }
+        
+        .about-title {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .about-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .about-section {
+            max-width: 900px;
+            margin: 0 auto var(--spacing-xl);
+        }
+        
+        .about-section h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-md);
+            text-transform: uppercase;
+            color: var(--accent-primary);
+        }
+        
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-section li {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .about-section li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-size: 1.5rem;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: var(--spacing-lg);
+        }
+        
+        .value-card {
+            background-color: var(--secondary-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-primary);
+        }
+        
+        .value-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .value-card p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+            background-color: var(--secondary-bg);
+        }
+        
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CuratedFlicks</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <section class="about-header">
+        <div class="container">
+            <h1 class="about-title">About CuratedFlicks</h1>
+            <p class="about-subtitle">Handpicked free streaming. No subscriptions. No nonsense.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Mission -->
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>
+                    YouTube is an incredible treasure trove of free content—classic films, documentaries, indie projects, retro programming, and hidden gems that deserve to be discovered. But finding quality content in the endless sea of uploads can be overwhelming.
+                </p>
+                <p>
+                    That's where CuratedFlicks comes in. We handpick the best free content available on YouTube and present it in a clean, Netflix-style interface that makes discovery easy and enjoyable. No subscriptions. No paywalls. Just great content, curated with care.
+                </p>
+            </div>
+
+            <!-- What We Offer -->
+            <div class="about-section">
+                <h2>What We Offer</h2>
+                <ul>
+                    <li><strong>Classic Films:</strong> Public domain masterpieces and timeless cinema</li>
+                    <li><strong>Documentaries:</strong> Eye-opening stories and in-depth explorations</li>
+                    <li><strong>Horror:</strong> From vintage terror to modern indie scares</li>
+                    <li><strong>Anime:</strong> Curated animation from around the world</li>
+                    <li><strong>Retro Programming:</strong> Nostalgic commercials, vintage TV, and cultural artifacts</li>
+                    <li><strong>Indie Films:</strong> Creative voices and independent storytelling</li>
+                </ul>
+            </div>
+
+            <!-- Our Values -->
+            <div class="about-section">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Quality</h3>
+                        <p>Every piece of content is handpicked and vetted for quality, ensuring you spend your time watching, not searching.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Free Access</h3>
+                        <p>Great content shouldn't be locked behind paywalls. We believe in free, accessible entertainment for everyone.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Creator Support</h3>
+                        <p>We use YouTube embeds that preserve creator attribution and drive traffic back to the original content creators.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Discovery</h3>
+                        <p>Our mission is to help you discover content you'd never find on your own—hidden gems that deserve attention.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="about-section">
+                <h2>How It Works</h2>
+                <p>
+                    All content on CuratedFlicks is sourced from YouTube using their official embed feature. We don't host, rip, or distribute any content—we simply provide a curated discovery layer that makes it easier to find quality free content.
+                </p>
+                <p>
+                    When you watch something on CuratedFlicks, you're watching it directly from YouTube, ensuring creators get proper views and attribution. You can always click through to watch on YouTube directly or visit the creator's channel.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Explore?</h2>
+            <p>Start discovering handpicked free content from across YouTube.</p>
+            <a href="browse.html" class="btn btn-primary">Browse Content</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">CuratedFlicks</h3>
+                    <p class="footer-tagline">Free Streaming, Handpicked</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CuratedFlicks. All content sourced from YouTube under their embed terms of service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/video-data.js"></script>
+    <script>
+        // Simple search functionality
+        const searchBtn = document.getElementById('searchBtn');
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                window.location.href = 'browse.html';
+            });
+        }
+    </script>
+</body>
+</html>

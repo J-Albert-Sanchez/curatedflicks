@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse - CuratedFlicks</title>
+    <meta name="description" content="Browse all categories of handpicked free content on CuratedFlicks.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .browse-header {
+            padding: 8rem 0 3rem;
+            text-align: center;
+        }
+        
+        .browse-title {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .browse-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .filter-bar {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--secondary-bg);
+            color: var(--text-secondary);
+            border: 2px solid transparent;
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            text-transform: uppercase;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-primary);
+            color: var(--primary-bg);
+            border-color: var(--accent-primary);
+        }
+        
+        .category-section {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .category-full-header {
+            margin-bottom: var(--spacing-md);
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-primary);
+        }
+        
+        .category-full-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        .browse-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: var(--spacing-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CuratedFlicks</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html" class="active">Browse</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Browse Header -->
+    <section class="browse-header">
+        <div class="container">
+            <h1 class="browse-title">Browse All</h1>
+            <p class="browse-description">Explore our handpicked collection of free films, series, and retro content.</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="classicFilms">Classic Films</button>
+                <button class="filter-btn" data-category="horror">Horror</button>
+                <button class="filter-btn" data-category="documentaries">Documentaries</button>
+                <button class="filter-btn" data-category="anime">Anime</button>
+                <button class="filter-btn" data-category="retro">Retro</button>
+                <button class="filter-btn" data-category="indie">Indie</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Content -->
+    <section class="browse-content">
+        <div class="container" id="browseContainer">
+            <!-- Content will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- AdSense Placeholder -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                <!-- Replace with your AdSense code -->
+                <p>Advertisement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">CuratedFlicks</h3>
+                    <p class="footer-tagline">Free Streaming, Handpicked</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="browse.html">Browse</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CuratedFlicks. All content sourced from YouTube under their embed terms of service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/video-data.js"></script>
+    <script src="js/browse.js"></script>
+</body>
+</html>
