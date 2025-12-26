@@ -39,8 +39,20 @@ const videoDatabase = {
             category: "horror",
             subcategory: "vampire",
             description: "The classic silent vampire film.",
-            thumbnail: "https://img.youtube.com/vi/FC6jFoYm3xs/maxresdefault.jpg",
+            thumbnail: "https://img.youtube.com/vi/FC6jFoYm3xs/hqdefault.jpg",
             featured: false
+        },
+
+         {
+            id: "cf001",
+            title: "Night of the Living Dead",
+            youtubeId: "J7Yvhe5fKmM",
+            year: 1968,
+            category: "classic-films",
+            subcategory: "horror",
+            description: "A group of people hide from bloodthirsty zombies in a farmhouse.",
+            thumbnail: "https://img.youtube.com/vi/J7Yvhe5fKmM/maxresdefault.jpg",
+            featured: true
         },
         // Add more horror films here
     ],
