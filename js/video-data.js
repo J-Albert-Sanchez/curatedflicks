@@ -44,7 +44,7 @@ const videoDatabase = {
         },
 
          {
-            id: "cf001",
+            id: "h002",
             title: "Night of the Living Dead",
             youtubeId: "J7Yvhe5fKmM",
             year: 1968,
@@ -56,7 +56,7 @@ const videoDatabase = {
         },
 
             {
-            id: "h002",
+            id: "h003",
             title: "Carnival of Souls",
             youtubeId: "vNYg4YWkp0k", // Search: "Carnival of Souls 1962 full movie" (Runtime: 78 min)
             year: 1962,
